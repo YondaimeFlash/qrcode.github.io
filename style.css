@@ -1,0 +1,58 @@
+/*--- CUSTOM PROPERTIES ---*/
+:root{
+  --collor-white: hsl(0, 0%, 100%);
+  --color-lightgrey:hsl(212, 45%, 89%);
+  --color-blue:hsl(220, 15%, 55%);
+  --color-darkblue:hsl(218, 44%, 22%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: var(--color-lightgrey);
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+img {
+  width: 288px;
+  height: 288px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.675rem;
+}
+
+.container {
+  background-color: var(--collor-white);
+  max-width: 320px;
+  padding: 1.075rem;
+  border-radius: 1.35rem;
+  box-shadow: 0 1.6rem 1.6rem hsla(0, 0, 0, 0.05);
+  text-align: center;
+  margin: 1.075rem;
+}
+.container h1 {
+  font-size: 1.375rem;
+  line-height: 1.275rem;
+  margin-top: 1.1em;
+  color: var(--color-darkblue);
+}
+.container p {
+  line-height: 1.3rem;
+  color: var(--color-blue);
+  margin: 1.075em;
+}
+.attribution a {
+text-decoration: none;
+color: var(--color-darkblue);
+}
+.attribution a:hover {
+  text-decoration: underline;
+}
